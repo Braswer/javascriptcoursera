@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My File</title>
+</head>
+<body>
+    <h1>My First script</h1>
+
+    <h2>Challenge</h2>
+
+    <script>
+
+/*         var red = 5;
+        var blue = "5";
+        var green = "6";
+
+        if (red === green) {
+            console.log("the statement is true")
+        }
+        else {
+            console.log("the statement is false")
+        } 
+
+        var colors = ['red', 'green', 'blue', 'yellow'];
+        var selectedColors = colors[3];
+
+        switch(selectedColors) {
+            case "red": console.log("the color is red"); break;
+            case "green": console.log("the color is green"); break;
+            case "blue": console.log("the color is blue"); break;
+            case "yellow": console.log("the color is yellow"); break;
+            default: console.log("There was an error")
+        } */
+/*         var colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple']; 
+        for(var i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+        } */
+
+/*         var colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple'];
+
+        for(var color of colors) {
+            console.log(color)
+        }
+
+        var myString = "Here is a string of text";
+        for(letter of myString) {
+            console.log(letter)
+        } */
+/* 
+        var i = 0;
+        var text = "";
+
+        while(i < 10) {
+            text += `The incrementor is ${i} and the next number it's gonna be ${i+1} \n`;
+            i++;
+        }
+        console.log(text); */
+
+/*         var myString = "I am really hungry for some";
+        var myUpperString = myString.toUpperCase();
+
+        var reallyLocation = myString.search("really");
+        var specialWord = myString.substr(reallyLocation, 6);
+        specialWord = specialWord.toUpperCase();
+
+        var newString = myString.replace("really", specialWord)
+
+        var foods = ["meat", "fish", "veg", "pasta"]; */
+
+/*         for (var food of foods){
+            console.log(`${newString} ${food}`);
+        } */
+
+/*         for(var i=0; i < foods.length; i++) {
+
+            var remainder = i % 2;
+            if (remainder === 0) {
+                console.log(`${newString} ${foods[i].toUpperCase()}`);
+            }
+
+            else {  
+                console.log(`${newString} ${foods[i]}`);
+            }
+        } */
+        var fname = "Lorenzo";
+        var sname = "Cipriani";
+        var adj = "short";
+        //var uname = prompt("What's your name?", "Insert here");
+        //var number = prompt("Choose a number", "");
+        var userColor = prompt("Pick a color", "");
+        var choosenColor = userColor.toLowerCase();
+
+        //console.log(`we know that ${fname} ${sname} is very ${adj}`);
+        //console.log(`Hello ${uname}, Welcome!`)
+/*         if (number <= 10) {
+            console.log("You entered a small number")
+            for (var i=0; i <= 10; i++){
+                if (i == number) {
+                    console.log(`Here is a ${i} <--- This is your number \n`)
+                }
+                else {
+                    console.log(`Here is a ${i} \n`)
+                }
+                
+            }
+        }
+        else if (number > 10) {
+            console.log("You entered a big number")
+        }
+
+        else {
+            console.log("That's not a number")
+        } */
+        if (choosenColor == "red" || choosenColor == "blue" || choosenColor == "yellow") {
+            console.log(`${userColor} is a primary color`)
+        }
+
+        else if (choosenColor == "orange" || choosenColor == "green" || choosenColor == "purple") {
+            console.log(`${userColor} is a secondary color`)
+        }
+
+        else {
+            console.log(`${userColor} is neither a primary or secondary color`)
+        }
+        
+
+    </script>
+</body>
+</html>
