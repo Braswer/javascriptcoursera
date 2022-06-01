@@ -66,6 +66,35 @@
 			<p id="copyright">copyright info</p>
 		</footer>
 	</main>
+	<script>
+/* 		document.getElementById('copyright').style.color = "green"
+		var par = document.querySelectorAll('p')
+
+		for ( var eachP of par) {
+			eachP.style.color = "green"
+		} 
+
+		document.querySelector('h1').className = "red";
+		document.querySelector('#two .date').className = "red"
+
+
+		document.querySelector('img').setAttribute('src', 'http://meadpoint.net/images/xmasajax.jpg');
+		var pstwo = document.querySelectorAll('#two p')
+
+		for (var ptwo of pstwo) {
+			ptwo.className = "blue"
+		}*/
+
+		var links = document.getElementsByTagName('a');
+
+		for (var link of links) {
+			var linkCont = link.getAttribute('href');
+
+			if (linkCont == "https://en.wikipedia.org/wiki/Llama") {
+				link.innerHTML = "Llamas are cool"
+			}
+		}
+	</script>
 	
 </body>
 </html>
