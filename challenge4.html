@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Challenges 22-30</title>
+	<style>
+		body { height: 3000px; }
+		.one{ background-color: beige; transition: all 3s;}
+		.two{ background-color: blueviolet; transition: all 3s;}
+		.three{ background-color: coral; transition: all 3s;}
+		.four{ background-color: cornflowerblue; transition: all 3s;}
+		.five{ background-color: darkgoldenrod; transition: all 3s;}
+	</style>
+</head>
+
+<body>
+
+	<h1>Javascript Challenges</h1>
+
+	<p>Press the B key to turn the page beige</p>
+	<p>Press the V key to turn the page blueviolet</p>
+	<p>Press the C key to turn the page coral</p>
+	<p>Press the F key to turn the page cornflowerblue</p>
+	<p>Press the G key to turn the page gold</p>
+
+	<script>
+
+		document.addEventListener('keydown', function(e) {
+            var bodyTag = document.querySelector('body')
+			switch (e.key) {
+				case "b": bodyTag.className = "one"; break;
+				case "v": bodyTag.className = "two"; break;
+				case "c": bodyTag.className = "three"; break;
+				case "f": bodyTag.className = "four"; break;
+				case "g": bodyTag.className = "five"; break;
+				default: alert("you pressed a wrong key")
+			}
+        })
+
+/* 		
+		var parAll = document.querySelectorAll('p')
+		var btn = document.querySelector('button')
+
+		btn.addEventListener('click', function() {
+			for (var par of parAll) {
+				par.style.color = "green"
+			}
+
+
+		}) 		
+		
+		#########################
+
+		var myDiv = document.querySelector('div')
+		var addBtn = document.querySelectorAll('button')[0]
+		var remBtn = document.querySelectorAll('button')[1]
+		var psNum = 1
+
+		addBtn.addEventListener('click', function() {
+			psNum++;
+			var newP = document.createElement('p')
+			var newT = document.createTextNode(`This is paragraph number ${psNum}`)
+
+			newP.appendChild(newT);
+			myDiv.appendChild(newP)
+		})
+
+		remBtn.addEventListener('click', function() {
+			if (psNum > 1) {
+				var allP = document.querySelectorAll('p')
+				myDiv.removeChild(allP[allP.length-1])
+				psNum--;
+				alert("You're trying to remove the last paragraph")
+			}
+
+		})
+		
+		##############
+
+		var heading = document.querySelector('h1')
+		var formTag = document.querySelector('form')
+
+		formTag.addEventListener('submit', function(e) {
+			e.preventDefault()
+			var numInp = parseInt(document.querySelectorAll('input')[0].value)
+			if (numInp ) {
+				heading.style.fontSize = numInp+"px"
+			}
+
+			else {
+				alert("That's not a number")
+			}
+		})
+
+
+		#########################
+
+		var myDiv = document.querySelector('div')
+
+		myDiv.addEventListener('mouseover', function() {
+			myDiv.className = "big"
+		})
+
+		myDiv.addEventListener('mouseout', function() {
+			myDiv.removeAttribute("class")
+		})
+
+		###################
+
+		var pageTop;
+
+		window.addEventListener('scroll', function() {
+			pageTop = window.pageYOffset;
+			var bodyTag = document.querySelector('body');
+
+			switch(true) {
+				case pageTop < 500: bodyTag.className = "one"; break;
+				case pageTop < 1000: bodyTag.className = "two"; break;
+				case pageTop < 1500: bodyTag.className = "three"; break;
+				case pageTop < 2000: bodyTag.className = "four"; break;
+				default: bodyTag.className = "five";
+			}
+
+			console.log(pageTop)
+
+		})
+*/
+	</script>
+	
+</body>
+</html>
