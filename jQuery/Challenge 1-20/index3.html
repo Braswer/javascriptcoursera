@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Don't change it</p>
+    <div id="main">
+        <p>Paragraph number one</p>
+        <p>Paragraph number two</p>
+        <p>Paragraph number three</p>
+        <p>Paragraph number four</p>
+        <p>Paragraph number five</p>
+        <p>Llamas and Chickens!</p>
+        <p>Paragraph number seven</p>
+        <p>Paragraph number eight</p>
+        <p>Paragraph number nine</p>
+        <p>Paragraph number ten</p>
+        <p>Paragraph number eleven</p>
+        <p>Paragraph number twelve</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $('#main p:contains(Llamas)').css('color', 'red')
+
+/*         var paras = document.querySelectorAll("#main p")
+
+        for (var para of paras) {
+            if (para.innerHTML == "Llamas and Chickens!") {
+                para.style.color = 'red'
+            }
+        } */
+
+        // $('#main p').even().css('color', 'red')
+
+/*         var parasInMain = document.querySelectorAll("#main p:nth-child(even)");
+        for (var i = 0; i < parasInMain.length; i++) {
+            parasInMain[i].style.color = "red";
+        } */
+
+
+    </script>
+</body>
+</html>

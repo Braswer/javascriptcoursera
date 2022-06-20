@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+        </ul>
+    </nav>
+
+    <p id="paragraph">Click a link to change this 
+        paragraph</p>
+        
+
+    <p>Here is a paragraph with a <a href="https://google.com" target="_blank"> link to Google</a> in it</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+/*        $('nav ul li a').click(function(){
+            const thisLink = $(this).html()
+            $('#paragraph').html(`You clicked ${thisLink}`)
+        })
+
+         const myLinks = document.querySelectorAll('nav ul li a')
+        const paragraph = document.querySelector('#paragraph')
+        for (let link of myLinks) {
+            link.addEventListener('click', function() {
+                const thisLink = this.innerHTML
+                paragraph.innerHTML = `You clicked ${thisLink}`
+            })
+        } */
+
+/*         $('nav ul li a').click(function(){
+            $(this).css('color', 'red')
+        })
+
+        const myLinks = document.querySelectorAll('nav ul li a')
+        for (let link of myLinks) {
+            link.addEventListener('click', function() {
+                this.style.color = "red"
+            })
+        } */
+    </script>
+
+</body>
+</html>

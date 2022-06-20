@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#" id="link1">Link one</a></li>
+            <li><a href="#" id="link2">Link two</a></li>
+            <li><a href="#" id="link3">Link three</a></li>
+            <li><a href="#" id="link4">Link four</a></li>
+            <li><a href="#" id="link5">Link five</a></li>
+        </ul>
+    </nav>
+
+    <p id="paralink1">Looks like you click the first link</p>
+    <p id="paralink2">Looks like you click the second link</p>
+    <p id="paralink3">Looks like you click the third link</p>
+    <p id="paralink4">Looks like you click the fourth link</p>
+    <p id="paralink5">Looks like you click the fifth link</p>
+        
+
+    <p>Here is a paragraph with a <a href="https://google.com" target="_blank"> link to Google</a> in it</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $('nav ul li a').click(function() {
+            const paraNumber = "#para" + $(this).attr("id");
+            $('p').css("color", "black")
+            $(paraNumber).css("color", "red")
+        })
+
+/*         const navLinks = document.querySelectorAll('nav ul li a')
+        const paragraphs = document.querySelectorAll('p')
+
+        for (let link of navLinks) {
+            link.addEventListener('click', function() {
+
+                const paraNumber = "#para" + this.id
+                for (let paragraph of paragraphs) {
+                    paragraph.style.color = "black"
+                }
+
+                const thisParagraph = document.querySelector(paraNumber)
+                thisParagraph.style.color = "red"
+            })
+        } */
+
+    </script>
+
+</body>
+</html>
